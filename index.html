@@ -15,6 +15,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<style type="text/css">
+	.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
+
 
 <link rel="stylesheet" href="css/lightbox.css"><!-- for gallery css -->
 
@@ -206,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 			<h3 class="heading">Skills</h3>
 		<div class='col-md-8 bar'>
-		<p class="bar-p">kjkhh</p>
+		<p class="bar-p">Well, if it can be thought, it can be done, a problem can be solved</p>
 			<div class="col-md-6 group">
 				<div class='bar_left'>
 					<div class='bar_group'>
@@ -244,68 +276,120 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div id="gallery" class="gallery">
 		<h3 class="heading">Portfolio</h3>
 			<div class="gallery-info">
+				<!-- ROW ONE-->
 				<div class="col-md-3 gallery-grids">
 					<a href="images/gallery1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/gallery1.jpg" alt="" class="img-responsive zoom-img">
+									<img src="images/gallery1.jpg" alt="" class="img-responsive zoom-img" >
+									
 					</a>
-				
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">View More info</button>
 				</div>
 				<div class="col-md-3 gallery-grids">
+
 					<a href="images/gallery9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
 						<img src="images/gallery9.jpg" alt="" class="img-responsive zoom-img">
 					</a>
-	
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">View More info</button>
 				</div>
 				<div class="col-md-3 gallery-grids">
 					<a href="images/gallery10.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
 						<img src="images/gallery10.jpg" alt="" class="img-responsive zoom-img">
 					</a>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">View More info</button>
 				</div>
 				<div class="col-md-3 gallery-grids">
+					<h3></h3>
 					<a href="images/gallery11.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
 						<img src="images/gallery11.jpg" alt="" class="img-responsive zoom-img">
 					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">View More info</button>
 				</div>
+
+			<!-- END OF ROW1 -->
+
+			<!-- START ROW 2-->
 				<div class="col-md-3 gallery-grids grid-mdl">
-					<a href="images/pik4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/pik4.jpg" alt="" class="img-responsive zoom-img">
+					<a href="images/pik6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik6.jpg" alt="" class="img-responsive zoom-img">
 					</a>
-				</div>
-				<div class="col-md-3 gallery-grids grid-mdl">
-					<a href="images/pik3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/pik3.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids grid-mdl">
-					<a href="images/pik2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/pik2.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids grid-mdl">
-					<a href="images/pik1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/pik1.jpg" alt="" class="img-responsive zoom-img">
-					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sacco">View More info</button>
 				</div>
 				<div class="col-md-3 gallery-grids grid-mdl">
 					<a href="images/pik8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
 						<img src="images/pik8.jpg" alt="" class="img-responsive zoom-img">
 					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sacco">View More info</button>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/pik2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik2.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sistprohub">View More info</button>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/pik1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik1.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sistprohub">View More info</button>
+				</div>
+
+				<!--END OF ROW 2 -->
+
+				<!-- START ROW 3
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/pik5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik5.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sacco">View More info</button>
 				</div>
 				<div class="col-md-3 gallery-grids grid-mdl">
 					<a href="images/pik7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
 						<img src="images/pik7.jpg" alt="" class="img-responsive zoom-img">
 					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sacco">View More info</button>
 				</div>
 				<div class="col-md-3 gallery-grids grid-mdl">
 					<a href="images/pik6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
 						<img src="images/pik6.jpg" alt="" class="img-responsive zoom-img">
 					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sacco">View More info</button>
 				</div>
 				<div class="col-md-3 gallery-grids grid-mdl">
-					<a href="images/pik5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/pik5.jpg" alt="" class="img-responsive zoom-img">
+					<a href="images/pik8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik8.jpg" alt="" class="img-responsive zoom-img">
 					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sacco">View More info</button>
 				</div>
+
+				 END ROW 3 -->
+
+				<!-- START ROW 4 -->
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/pik12.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik12.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loan">View More info</button>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/pik10.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik10.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loan">View More info</button>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/pik11.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik11.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loan">View More info</button>
+				</div>
+				<div class="col-md-3 gallery-grids grid-mdl">
+					<a href="images/pik9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="images/pik9.jpg" alt="" class="img-responsive zoom-img">
+					</a>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loan">View More info</button>
+				</div>
+
+				<!-- END ROW 4-->
 				<div class="clearfix"> </div>	
 			</div>
 		<script src="js/lightbox-plus-jquery.min.js"></script>
@@ -401,21 +485,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="count-bgcolor-w3ls">
 						<div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='120' data-delay='1' data-increment="1">12</div>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='7' data-delay='1' data-increment="1">7</div>
 									<span></span>
-									<h5>Projects done</h5>
+									<h5>Proficient Languages</h5>
 							</div>
 						</div>
 						<div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='172' data-delay='1' data-increment="1">172</div>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='11' data-delay='1' data-increment="1">11</div>
 									<span></span>
-									<h5>New Companies</h5>
+									<h5>Projects done </h5>
 							</div>
 						</div>
 						<div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='102' data-delay='1' data-increment="1">102</div>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='7' data-delay='1' data-increment="1">7</div>
 									<span></span>
 									<h5>Web designs</h5>
 							</div>
@@ -432,6 +516,135 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 	</div>
 </div>
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal ends here -->
+<div class="modal fade bd-example-modal-lg" id="sistprohub" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <div class="grid1"><h3>Sist Prohub</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+      </div>
+      <div class="modal-body">
+      	<h3><i>Overview</i></h3><br>
+        
+        <p class="bar-p">SistProhub is a repository for Harare Institute of Technology School of Information  Science and Technology aimed facililatating how students Year 2 projects(HIT200) and final year student projects(HIT400) are done providing a collaborative , interactive way to both Students and Lecturers from each project proposal throughout its development stage to deployment</p><br><br><br>
+
+        <h3>Used tools</h3><br>
+        <li>Front-end: Html, css , javascript and bootstrap framework</li>
+        <li>Back-end: Php5,mysql and MariaDb</li>
+        <li>The project also comprises of a mobile application being developed with xamarin(visual studio 2018)</li><br><br><br>
+
+        <h3>Status</h3>
+        <p class="bar-p"><i>This project is still under development and its expected completion time is December 2018</i></p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-lg" href = 'www.youtube.com'>View Demo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--modal for  -->
+
+<div class="modal fade bd-example-modal-lg" id="loan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <div class="grid1"><h3>Loan Management Portal</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+      </div>
+      <div class="modal-body">
+      	<h3><i>Overview</i></h3><br>
+        
+        <p class="bar-p">Loan Management Portal is a complete, agile loan servicing application that automates loan billing and payments, collections management and accounting under one robust, flexible and secure platform. It efficiently manages portfolios, increases transaction volume and rapidly brings new products to market.Loan Management Portal enables real-time online updates of transactions, and can be easily integrated with mobile platforms.Loan Management Portal gives you complete control of your lending products and provides support for all of your lending needs at affordable rate</p><br><br><br>
+
+        <h3>Used tools</h3><br>
+        <li>Front-end: Pure Html, css and javascript</li>
+        <li>Back-end: python(framework: Flask) and Sqlite</li>
+        <br><br>
+
+        <h3>Status</h3>
+        <p class="bar-p"><i>This project is complete and is available for free to implement</i></p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-lg" href = 'www.youtube.com'>View Demo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="sacco" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <div class="grid1"><h3>Sacco System</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+
+        </button>
+    </div>
+      </div>
+      <div class="modal-body">
+      	<h3><i>Overview</i></h3><br>
+        
+        <p class="bar-p">Sacco system is a complete agile software to be used in industry.The software facilatates the operations of a micro-finance company which its core business  is to offer investment opportunities  to individuals and loan facilities to people with investment accounts.</p><br><br><br>
+
+        <h3>Used tools</h3><br>
+        <li>For Security reasons, the used tools of the system cannot be reviewed to public</li>
+
+        <h3>Status</h3>
+        <p class="bar-p"><i>This project is still under testing and the testing results result will determine its viability to market</i></p>
+
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary btn-lg" href = 'www.youtube.com'>View Demo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal ends here-->
 
 <!-- Technical Skills -->
 
@@ -451,7 +664,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="mail-agileits-w3layouts">
 				<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
 				<div class="contact-right">
-					<p>Email</p><a href="mailto:info@example.com">nchikobvor@gmail.com</a>
+					<p>Email</p><a href="mailto:nchikobvor@gmail.com">nchikobvor@gmail.com</a>
 				</div>
 				<div class="clear"></div>
 			</div>
